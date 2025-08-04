@@ -6,6 +6,8 @@
 html, body{
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 #calculator{
   border: 1px solid rgb(83, 82, 82);
@@ -13,6 +15,7 @@ html, body{
   width: 400px;
   border-radius: 10px;
   margin: 30px;
+  background-color: black;
 }
 #display{
   margin-left: 30px;
@@ -20,6 +23,8 @@ html, body{
   width: 80%;
   height: 10%;
   font-size: 25px;
+  background-color: rgb(93, 135, 93);
+  color: white;
 }
 .btn{
   height: 65px;
@@ -28,11 +33,19 @@ html, body{
   margin-top: 10px;
   font-size: 25px;
   font-weight: bolder;
-
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px;
 }
 .btn-container{
   display: flex;
   justify-content: centre;
   margin-left: 25px;
   flex-wrap: wrap;
+}
+#clear{
+  background-color: rgb(240, 55, 55);
+}
+.btn{
+  background-color: rgb(46, 45, 45);
 }

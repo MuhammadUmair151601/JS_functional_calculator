@@ -10,7 +10,7 @@
   <div id="calculator">
   <input type="text"  id="display" readonly>
     <div class="btn-container">
-          <button class="btn" onclick="currentvalue = ' '; document.querySelector('#display').value = currentvalue;">C</button>
+          <button class="btn" id="clear" onclick="currentvalue = ' '; document.querySelector('#display').value = currentvalue;">C</button>
 
           <button class="btn" onclick="currentvalue = currentvalue + '1'; document.querySelector('#display').value = currentvalue;">1</button>
 
@@ -36,7 +36,9 @@
           
           <button class="btn" onclick="currentvalue = currentvalue + '/'; document.querySelector('#display').value = currentvalue;">/</button>
 
-          <button class="btn" onclick="currentvalue = currentvalue + '='; document.querySelector('#display').value = currentvalue;">=</button>
+          <button class="btn" 
+          onclick="currentvalue = eval (currentvalue);
+           document.querySelector('#display').value = currentvalue;">=</button>
 
           <button class="btn" onclick="currentvalue = currentvalue + '9'; document.querySelector('#display').value = currentvalue;">9</button>
 
