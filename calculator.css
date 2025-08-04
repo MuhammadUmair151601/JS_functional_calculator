@@ -49,3 +49,20 @@ html, body{
 .btn{
   background-color: rgb(46, 45, 45);
 }
+/* media query */
+@media (max-width: 600px){
+  #calculator{
+    width: 95%;
+    height: auto;
+  }
+  .btn{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    font-size: 20px;
+  }
+  #display{
+    width: 90%;
+    font-size: 20px;
+  }
+}
